@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y Tablas</title>
+    <style>
+        table, td, th {
+            border: solid;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    
+    <header>
+
+        <nav>
+            <a href="#listas">Listas</a>
+            <a href="#tablas">Tablas</a>
+            <a href="#colyrowspan">Expandirse</a>
+        </nav>
+
+    </header>
+    <br>
+    <i class = "fab fa-facebook fa-lg" ></i>
+    <main>
+        <iframe width ="300" height="200" src="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny></iframe>
+        <section id="listas" >
+            <h2>Listas ordenadas</h2>
+            <ol type="I" reversed>
+                <li>op1</li>
+                <li>op2</li>
+                <li>op3</li>
+                <li>op4</li>
+                <li>op5</li>
+                <li>op6</li>
+            </ol>
+            <br>
+            <h2>Listas sin ordenar</h2>
+            <ul type="I">
+                <li>op1</li>
+                <li>op2</li>
+                <li>op3</li>
+                <li>op4</li>
+                <li>op5</li>
+                <li>op6</li>
+            </ul>
+
+        </section>
+
+        <section id="tablas">
+            <table>
+                <tr>
+                    <th>Titulo Columna 1</th>
+                    <th>Titulo Columna 2</th>
+                    <th>Titulo Columna 3</th>    
+                </tr>
+                <tr>
+                    <td>celda 1</td>
+                    <td>celda 2</td>
+                    <td>celda 3</td>
+                </tr>
+
+                <tr>
+                    <td>celda 4</td>
+                    <td>celda 5</td>
+                    <td>celda 6</td>
+                </tr>
+
+            </table>           
+        </section>
+        <br>
+
+        <section id="colyrowspan">
+            <table>
+                <tr>
+                    <th>Curso</th>
+                    <th>Comision</th>
+                </tr>
+                <tr>
+                    <td colspan="2">java</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">fullstack</td>
+                    <td>2122</td>
+                </tr>
+                <tr>
+                    <td>web</td>
+                </tr>
+            </table>
+
+        </section>
+
+
+
+    </main>
+
+
+
+</body>
+</html>
