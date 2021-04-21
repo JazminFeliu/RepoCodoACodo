@@ -1,0 +1,31 @@
+* {
+    font-size: 65px;
+}
+
+@font-face {
+    font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+span{
+    font-size: 30px;
+}
+h1 {
+    color:#001154;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#parrafo-principal {
+    font-family: playaDelAmor;
+    color: darkblue;
+    background-color: darkturquoise;
+}
+
+p {
+    color:darkmagenta
+}
+
+.color-verde {
+    color: darkgreen;
+}
+

@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(255, 254, 254);
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+.header{
+    color: rgb(0, 0, 0);
+} 
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;        
+}
+
+section {
+    height: 100vh;
+    border: 1px solid rgb(255, 255, 255); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.home {
+    width: 150vw;
+    height: 100vh;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;   
+    color: rgb(0, 0, 0);
+    
+    background-size: 2000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#home .profile-img {
+    width: 150px;
+    border-radius: 50%;    
+}
+
+footer {
+    text-align: center;
+    padding: 50px;    
+}
+
+#home h1 {
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+#about h2 {
+    font-size: 3em;
+    color:rgb(255, 254, 254);
+}
+
+#about h3 {
+    font-size: 2em;
+    color:rgb(255, 254, 254);
+}
+
+#contact h2 {
+    font-size: 3em;
+    color: rgb(255, 254, 254);
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#home {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.65),rgba(255, 255, 255, 0.95)), url('https://i1.wp.com/serambiental.info/wp-content/uploads/2020/09/RecursoAmbiental.jpg?w=800&ssl=1');
+    
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.65),rgba(255,255,255,0.95)), url('https://i0.wp.com/serambiental.info/wp-content/uploads/2019/03/Vista5.jpg?resize=768%2C508&ssl=1');
+        
+}
+
+#contact {
+    background-image: linear-gradient(rgba(255,255,255,0.65),rgba(255,255,255,0.95)), url('https://i2.wp.com/serambiental.info/wp-content/uploads/2020/10/IMG-20200917-WA0001.jpg?resize=768%2C576&ssl=1');
+}
