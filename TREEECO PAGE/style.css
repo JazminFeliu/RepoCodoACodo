@@ -122,3 +122,7 @@ header a {
 #contact {
     background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)), url('https://i2.wp.com/serambiental.info/wp-content/uploads/2020/10/IMG-20200917-WA0001.jpg?resize=768%2C576&ssl=1');
 }
+
+#siar {
+    background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)), bg-image("../TREEECO PAGE/IMG/DSC_0001.jpg");
+}
