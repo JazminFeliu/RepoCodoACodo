@@ -3,8 +3,8 @@
 }
 
 @font-face {
-    font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
+    font-family: josefin;
+    src: url(../fonts/formulario2122.html);
 }
 
 span{
@@ -16,7 +16,6 @@ h1 {
 }
 
 #parrafo-principal {
-    font-family: playaDelAmor;
     color: darkblue;
     background-color: darkturquoise;
 }

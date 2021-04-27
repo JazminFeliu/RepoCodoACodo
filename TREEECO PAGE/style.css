@@ -75,7 +75,7 @@ footer {
 
 #home h1 {
     font-size: 3em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 
     margin-top: 0;
     margin-bottom: 0.5em;
@@ -83,17 +83,17 @@ footer {
 
 #about h2 {
     font-size: 3em;
-    color:rgb(255, 254, 254);
+    color:rgb(0, 0, 0);
 }
 
 #about h3 {
     font-size: 2em;
-    color:rgb(255, 254, 254);
+    color:rgb(0, 0, 0);
 }
 
 #contact h2 {
     font-size: 3em;
-    color: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
 }
 
 section h2 {
@@ -110,15 +110,15 @@ header a {
 }
 
 #home {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.65),rgba(255, 255, 255, 0.95)), url('https://i1.wp.com/serambiental.info/wp-content/uploads/2020/09/RecursoAmbiental.jpg?w=800&ssl=1');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.60),rgba(255, 255, 255, 0.85)), url('https://i1.wp.com/serambiental.info/wp-content/uploads/2020/09/RecursoAmbiental.jpg?w=800&ssl=1');
     
 }
 
 #about {
-    background-image: linear-gradient(rgba(255,255,255,0.65),rgba(255,255,255,0.95)), url('https://i0.wp.com/serambiental.info/wp-content/uploads/2019/03/Vista5.jpg?resize=768%2C508&ssl=1');
+    background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)), url('https://i0.wp.com/serambiental.info/wp-content/uploads/2019/03/Vista5.jpg?resize=768%2C508&ssl=1');
         
 }
 
 #contact {
-    background-image: linear-gradient(rgba(255,255,255,0.65),rgba(255,255,255,0.95)), url('https://i2.wp.com/serambiental.info/wp-content/uploads/2020/10/IMG-20200917-WA0001.jpg?resize=768%2C576&ssl=1');
+    background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)), url('https://i2.wp.com/serambiental.info/wp-content/uploads/2020/10/IMG-20200917-WA0001.jpg?resize=768%2C576&ssl=1');
 }
