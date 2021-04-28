@@ -62,6 +62,15 @@ section {
     background-attachment: fixed;
 }
 
+.siar {
+    width: 150vw;
+    height: 100vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 
 #home .profile-img {
     width: 150px;
@@ -110,12 +119,12 @@ header a {
 }
 
 #home {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.60),rgba(255, 255, 255, 0.85)), url('https://i1.wp.com/serambiental.info/wp-content/uploads/2020/09/RecursoAmbiental.jpg?w=800&ssl=1');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.60),rgba(255, 255, 255, 0.85)), url(../IMG/DSC_0001.JPG);
     
 }
 
 #about {
-    background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)), url('https://i0.wp.com/serambiental.info/wp-content/uploads/2019/03/Vista5.jpg?resize=768%2C508&ssl=1');
+    background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)), url('https://i1.wp.com/serambiental.info/wp-content/uploads/2020/09/RecursoAmbiental.jpg?w=800&ssl=1');
         
 }
 
@@ -124,5 +133,13 @@ header a {
 }
 
 #siar {
-    background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)), bg-image("../TREEECO PAGE/IMG/DSC_0001.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)), url('../TREEECO PAGE/IMG/DSC_0042.JPG');
+}
+
+#cec {
+    background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)), url('../IMG/eet1.jpg');
+}
+
+#blog {
+    background-image: linear-gradient(rgba(255,255,255,0.60),rgba(255,255,255,0.85)),url('../IMG/TREECO\ NUBE4.JPG')
 }
