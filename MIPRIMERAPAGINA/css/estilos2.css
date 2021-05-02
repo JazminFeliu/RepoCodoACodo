@@ -1,0 +1,20 @@
+.flex-container {
+    width: 50vw;
+    height: 50vh;
+    background-color: blanchedalmond;
+    color: white;
+    display: flex;
+    flex-direction: row; /*eje principal*/
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.flex-item {
+    width: 15%;
+    height: 15%;
+    background-color:deeppink;
+    border: 1px solid white;
+}
+
+
