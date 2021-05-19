@@ -1,0 +1,49 @@
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+body{
+  background: linear-gradient(60deg, green, white);
+}
+
+.grid-container{
+  display: grid;
+
+  /*grid-template-columns: 150px 250px 150px;*/
+  /*grid-template-columns: repeat(4,3rem);*/
+  /*grid-template-rows: 3rem 9rem 3rem 5rem; */
+
+  grid-template-rows: repeat(4,20vh);
+  /*grid-template: 3rem 9rem 3rem 5rem /150px 250px 150px; Esta forma es igual a la anterior, pero todo en un mismo parrafo*/
+  grid-template-columns: 1fr 2fr 1fr;
+
+  grid-column-gap: 5%;
+  grid-row-gap: 25% ;
+
+}
+
+.grid-item{
+  border: 1px solid black;
+  background-color:goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#item-especial{
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  grid-row-start: 2;
+  grid-row-end: 5;
+
+}

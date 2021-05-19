@@ -31,7 +31,7 @@ html{
 
 .nav-wrapper >.right-side>div{
     margin-left: 30px;
-    margin-top: 20%;
+    margin-top: 30%;
     font-size:1em;
     text-transform: uppercase;
 
@@ -59,6 +59,46 @@ html{
     padding: 0 1em;
 }
 
+.cards{
+    display: grid;
+    height: auto;
+    padding: 1rem;
+    grid-template-areas:"uno dos tres"
+                        "cuatro cinco seis";
+                       
+    grid-gap: 1rem;
+}
+
+.s1{
+    grid-area: uno;
+}
+.s2{
+    grid-area: dos;
+}
+.s3{
+    grid-area: tres;
+}
+.s4{
+    grid-area: cuatro;
+}
+.s5{
+    grid-area: cinco;
+}
+.s6{
+    grid-area: seis;
+}
+
+
+@media screen and (max-width: 800px) {
+    .cards{
+        grid-template-areas:    "uno uno uno"
+                                "dos dos dos"
+                                "tres tres tres"
+                                "cuatro cuatro cuatro"
+                                "cinco cinco cinco"
+                                "seis seis seis";
+    }
+}
 
 
 @media screen and (min-width: 52em) {
@@ -109,14 +149,12 @@ html{
 .tarjeta{
     background:rgb(240, 225, 198);
     margin-bottom: 2em;
-    width: 33%;
+    padding: 0;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 40% 40%;   
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+
 
 .tarjeta a{
     color: black;
@@ -127,7 +165,7 @@ html{
 }
 
 .tarjeta-content{
-    padding: 1.4em;
+    padding: 0;
 }
 
 
@@ -141,6 +179,7 @@ html{
 .tarjeta-content p{
     font-size: 95%;
     text-align: justify;    
+    padding: 0fr;
 }
 
 .tarjeta-content li a i{

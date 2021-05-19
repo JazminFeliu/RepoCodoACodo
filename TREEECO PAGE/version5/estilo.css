@@ -1,0 +1,264 @@
+/*formato para tutti el situa*/
+*{
+  font-family: Arial, Helvetica, sans-serif;  
+  padding: 0;
+  margin:0;
+}
+
+body{
+  background: white;
+}
+
+
+/*se termino el tutti*/
+
+/*formateo para la medida celu*/
+
+main {
+    color: gainsboro;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+      100px
+      1fr
+      100px
+      100px;    
+    grid-template-areas:    
+    "my-nav my-nav my-nav"
+    "my-section my-section my-section"
+    "my-aside my-aside my-aside"
+    "my-footer my-footer my-footer";
+}
+/*se termino la tableta*/
+
+/*header*/
+
+header {
+    grid-area: my-header;
+    background:white;
+}
+
+.profile-img {
+  width: 30%;
+  height: 30%;
+  border-radius: 100%;  
+  display: block;
+}
+
+.menu-redes {
+  display: grid;
+  grid-template-columns: 5fr;
+}
+
+ .nav-wrapper{
+  display:flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+ .right-side{
+  display: flex;
+}
+
+ .nav-wrapper >.right-side>div{
+
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-top:30%;
+  font-size:20px;
+  text-transform: uppercase;
+
+}
+
+.nav-link-wrapper a{
+  color:#787942;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+ .nav-link-wrapper:hover{
+  border-bottom: 1px solid blank;
+}
+
+ .nav-link-wrapper a:hover{
+  color:black;
+}
+/* hasta aca el header*/ 
+
+/*Nav bar*/
+   
+.navigation {
+  grid-area: my-nav;
+  width: 100%; 
+  background: tomato;
+
+}
+
+.navigation nav {
+  width:90%;
+  max-width:1000px;
+  margin:20px auto;
+  background: tomato;
+  
+}
+
+.menu_bar {
+  display: none;
+  width: 100%;
+
+}
+
+.navigation nav ul{
+  overflow: hidden;
+  list-style:left;
+  
+}
+
+.navigation nav ul li{
+  float: left;
+  
+}
+
+.navigation nav ul li a{
+  color:white;
+  padding: 20px;
+  text-decoration: none;
+  display:list-item;
+}
+
+.navigation nav ul li span {
+  margin-right: 10px;
+}
+
+.navigation nav ul li a:hover {
+  background:turquoise;
+  
+
+}
+/*hasta aca el nav bar*/
+
+/*Aside */
+aside {
+    grid-area: my-aside;
+    background-color: darkmagenta;
+}
+
+/*hasta aca el aside*/
+
+/*section*/
+
+section {  
+    grid-area: my-section;
+    background-color:teal;
+
+
+}
+
+/*hasta aca el section*/
+
+/*Glorioso footer*/
+
+footer {
+    grid-area: my-footer;
+    background-color: black;   
+}
+
+footer p{
+  color:whitesmoke;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  text-align: center;  
+}
+
+footer a{
+  text-decoration: none;
+  transition: color 0.5s;
+  color:whitesmoke;
+  background-color: black;  
+}
+
+footer a:hover{
+  color:#787942;
+}
+/* Se termino el glorioso footer*/
+
+/*formateo medida celu*/
+@media screen and (max-width:600px) {
+  navigation nav {
+    width: 80%;
+    height: 100%;
+    left:-100%;
+    margin:0;
+    position: fixed;
+  }
+
+  navigation nav ul li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid white;
+  }
+
+  .menu_bar{
+    display: block;
+    width: 100%;
+    background: green;
+  }
+
+  .menu_bar .bt-menu{
+    display: block;
+    padding: 20px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+  }
+
+  .menu-bar span{
+    float:right;
+    font-size: 40px;
+  }
+}
+/* se termino el formateo medida celu*/
+
+/*formateo medida tableta*/
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    main {
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: 150px
+        100px
+        1fr
+        100px;
+      grid-template-areas:
+        "my-header my-header my-header"
+        "my-nav my-nav my-nav"
+        "my-aside my-section my-section"
+        "my-footer my-footer my-footer";        
+    }  
+    
+  }
+/*se termino el medida tableta*/
+
+/*formateo medida pagina completa */
+@media (min-width: 1001px) {
+  main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 100px
+      2fr
+      100px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-section my-aside"
+      "my-footer my-footer my-footer"
+  }
+}
+/*fin de la medida pagina completa*/
+
+
