@@ -1,0 +1,222 @@
+.body{
+    margin: 0;   
+    font-family: Poppins; 
+}
+
+html{
+    font-family: Poppins;
+}
+
+.profile-img {
+    width: 30%;
+    height: 30%;
+    border-radius: 80%;  
+
+}
+
+.menu-redes {
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+.nav-wrapper{
+    display:flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.right-side{
+    display: flex;
+}
+
+.nav-wrapper >.right-side>div{
+    margin-left: 30px;
+    margin-top: 20%;
+    font-size:1em;
+    text-transform: uppercase;
+
+}
+
+.nav-link-wrapper a{
+    color:#787942;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid blank;
+}
+
+.nav-link-wrapper a:hover{
+    color:black;
+}
+
+
+.centrado{
+	background: white;
+	margin: 0;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.cards{
+    display: grid;
+    height: auto;
+    padding: 0;
+    grid-template-areas:"uno dos tres"
+                        "cuatro cinco seis";
+                       
+    grid-gap: 0.5rem;
+}
+
+.s1{
+    grid-area: uno;
+}
+.s2{
+    grid-area: dos;
+}
+.s3{
+    grid-area: tres;
+}
+.s4{
+    grid-area: cuatro;
+}
+.s5{
+    grid-area: cinco;
+}
+.s6{
+    grid-area: seis;
+}
+
+
+@media screen and (max-width: 800px) {
+    .cards{
+        grid-template-areas:    "uno uno uno"
+                                "dos dos dos"
+                                "tres tres tres"
+                                "cuatro cuatro cuatro"
+                                "cinco cinco cinco"
+                                "seis seis seis";       
+    }
+
+    .img{
+        width: 50%;
+        height: 50%;
+    }
+
+}
+
+
+@media screen and (min-width: 52em) {
+    .centrado{
+        max-width: 52em;
+    }    
+}
+
+.menu-section{
+    padding-bottom: 0.3em;
+    margin-bottom: 0.3em;
+    border-bottom: 1px solid hsl(0, 0%);    
+}
+
+.menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(160, 8%, 44%);
+}
+
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    background: hsl(184, 42%, 46%);  
+    color:white;
+    padding: .6em 1em;
+}
+
+.menu li a:hover{  
+    background:white;
+    color: #686930;
+    transition: 0.3s;
+}
+
+.menu-simple ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-simple li {
+    flex:1 0 auto;
+    text-align: center;
+}
+
+.tarjeta{
+    background:rgb(242, 243, 206);
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 50% 50%;   
+}
+
+.thumbnail h2,form{
+    text-align: center;
+    font-weight:inherit;
+    color:mediumvioletred;
+
+} 
+
+.tarjeta a{
+    color: black;
+    text-decoration:none;
+}
+.tarjeta a:hover{
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.tarjeta-content{
+    padding: 0;
+    text-align: center;
+
+}
+
+.tarjeta-content h2{
+    margin-top: 1em;
+    margin-bottom: .30em;
+    padding: 1px;
+    font-weight:inherit !important;
+    color:mediumvioletred;
+}
+
+.tarjeta-content p{
+    font-size: 95%;
+    text-align:justify;    
+    padding: 20px;
+}
+
+.tarjeta-content li a i{
+    color: #686930;
+}
+
+figure{
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin: .5em 0 0 0;
+  }
+
+img{
+    display: block;
+    border: 0;
+    width: 100%;
+      
+}
+
+.footer{
+    text-align: center;
+}
