@@ -1,5 +1,6 @@
 .body{
-    margin: 0;    
+    margin: 0;   
+    font-family: Poppins; 
 }
 
 html{
@@ -186,7 +187,7 @@ html{
     margin-top: 1em;
     margin-bottom: .30em;
     padding: 1px;
-    font-weight:inherit;
+    font-weight:inherit !important;
     color:mediumvioletred;
 }
 

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript clase 14</title>
+</head>
+<body>
+    <h1>Dom Basico</h1>
+    <!-----
+    <p id="parrafo1">1-1111 ipsljdñasfj fsakdjf</p>
+    <p id="parrafo2">2-2222 ipsljdñasfj fsakdjf</p>
+    <p id="parrafo3">3-333 ipsljdñasfj fsakdjf</p>
+
+    <script>
+        let parrafos = document.getElementsByTagName("p");
+        console.log(parrafos);
+
+        let segundoParrafo = parrafos[1].innerHTML;
+        console.log(segundoParrafo);
+
+        let parrafoNuevo = document.getElementById("parrafo1");
+        ///remplazar texto
+        document.getElementById("parrafo2").innerHTML = "segundo parrafo modificado!!!";
+
+        //cambiar el estilo 
+        document.getElementById("parrafo3").style.color = "red";
+        document.getElementById("parrafo3").style.fontSize = "50px";
+    </script>
+
+    <h2>Primer Query Selector</h2>
+    <h2 id="elSegundo">Segundo Query Selector</h2>
+    <script>
+        //con QuerySelector
+        const tituloPagina = document.querySelector("h2");
+        console.log(tituloPagina);
+
+        const tituloPorId = document.querySelector("#elSegundo");
+        console.log(tituloPorId);
+
+    </script>
+
+    <h2 id="title">Query Selector</h2>
+    <div id="container">
+        <div class="caja">Caja 1</div>
+    </div>
+
+    <div id="container2">
+        <div class="caja">Caja 2</div>
+    </div>
+
+    <script>
+        //quiero la plimer caja
+        const cajaPrimera = document.querySelector(".caja");
+        console.log(cajaPrimera);
+
+        //conteniedo de la segunda caja como lo llamo? con padres/hijos
+        const container2 = document.querySelector("#container2");
+        const cajaDelSegundo = container2.querySelector(".caja");
+        console.log(cajaDelSegundo);
+    </script>
+
+    <div class="caja">Caja 3</div>
+    <div class="caja">Caja 4</div>
+    <div class="caja">Caja 5</div>
+
+    <script>
+        const cajas = document.querySelectorAll(".caja");
+        console.log(cajas);
+
+        //cajas[1].style.color="red"; con esto cambio solo a la posicion 1
+        for(let i = 0; i <cajas.length; i++){
+            cajas[i].style.color="green";
+        }
+
+        //con el forech tambien puedo, el arrow function
+
+        cajas.forEach((e) => {
+            e.style.color="violet";
+        })
+    </script>
+
+    <ul id="lista1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ul id="lista2">
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+<script>
+    //como traigo los 6 nodos?
+    const items = document.querySelectorAll("li");
+
+    //como acceso solo a los de la segunda lista?
+    const laListaDos = document.querySelector("#lista2");
+    const itemsDeLaDos = laListaDos.querySelectorAll("li");
+    console.log(itemsDeLaDos);
+</script>
+
+
+<div id="cajaParaTitulo">
+    <p id="parrafo1">1 - fasdfadsfasdfasdfasdfas</p>
+    <p id="parrafo2">2- asdfadsfawetqweqwetwqetwaetqwetqewt</p>
+        
+    <p id="parrafo3">3- asdfasdf asiuqwoeriuwqpfasdkfanslkfjdas</p>
+</div>
+<script>
+    //meter un titulo h3  
+    
+    //1 crear etiqueta
+    let  nuevoElemento = document.createElement("h3");
+
+    //2 creamos contenido
+    let nuevoContenido = document.createTextNode("Nuevo h3");
+
+    //3 metemos contenido en etiqueta
+    nuevoElemento.appendChild(nuevoContenido);
+
+    //metemos estilos
+    nuevoElemento.setAttribute("color", "blue");
+
+    //posicionamos
+    //document.getElementById("cajaParaTitulo").appendChild(nuevoElemento);
+
+    let parrafos1 = document.getElementsByTagName("p")[4];
+    parrafos1.appendChild(nuevoElemento);
+</script>
+
+<div>
+    <button id="elBoton2">Soy el Boton Tolon</button>
+</div>
+
+<script>
+    let boton = document.getElementById("elBoton");
+
+    let mensaje = function(){
+        document.write("che tocaste el boton Tolon");
+    }
+
+    let mensaje2 = function(){
+        console.log("estas arriba de BotonTolon");
+    }
+
+    let mensaje3 = function(){
+        console.log("te fuiste");
+    }
+
+    boton.addEventListener("click", mensaje);
+    boton.addEventListener("mouseover",mensaje2);
+    boton.addEventListener("mouseout",mensaje3);
+</script>
+----->>
+<div>
+    Ingrese texto: <input id ="input" type="text">
+    <br>
+    Ingrese letra a buscar: <input id="letra" type="text">
+    <br>
+    <button id="elBoton">Calcular la cantidad de letras</button>
+</div>
+
+<script>
+    let mensaje6 = function(){
+        let texto = document.getElementById("input");
+
+        let letra = document.getElementById("letra").value;
+
+        let contador = 0;
+
+        for(let i = 0; i < texto.length; i++){
+            {
+                if(texto.substring(i,i+1) == letra){
+                    contador ++;
+                }              
+
+            }
+            document.write("Encontramos "+contador +" letras"+ letra);
+        }
+    }
+
+    let boton = document.getElementById("elBoton");
+    boton.addEventListener("click", mensaje6);
+
+</script>
+
+
+    
+</body>
+</html>
