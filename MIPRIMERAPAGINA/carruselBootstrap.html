@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plantilla Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <h1>Hola, como estas?</h1>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <div id="contenedor">
+        <div id="myCarousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="active item"><img  src="/home/jazmin/Drives/DATOS/Documents/Repos/RepoCodoACodo/IMG/DSC_0002.JPG" alt="banner1" /></div>
+            <div class="item"><img  src="../IMG/IMG-20200913-WA0031.jpg" alt="banner2" /></div>
+            <div class="item"><img  src="../IMG/IMG-20190904-WA0007.jpg" alt="banner3" /></div>
+            <div class="item"><img  src="../IMG/DSC_0044.JPG" alt="banner4" /></div>
+            <div class="item"><img  src="../IMG/DSC_0029.JPG" alt="banner5" /></div>
+          </div>
+          <!-- Carousel nav -->
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        </div>
+    </div>
+     
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.myCarousel').carousel()
+        });
+    </script>
+  </body>
+</html>
