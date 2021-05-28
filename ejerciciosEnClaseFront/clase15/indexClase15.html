@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue </title>
+</head>
+<body>
+    <h1>Esto es una intro de Vue</h1>
+    
+<div id="app">
+    <p>valor Bind es unidireccional</p>
+    <input type="text" v-bind:value="valorBind">
+    <p>{{valorBind}}</p>
+
+    <p>valor Model es bidireccional</p>
+    <input type="text" v-model:value="valorModel">
+    <p>{{valorModel}}</p>
+
+
+    <p>Ejercicio 2 cuando usaria v-bind</p>
+    <p>Link dinamico: ver documentacion de: 
+        <a v-bind:href="link">
+            {{nombreLink}}
+        </a>
+    </p>
+
+    <p>ejercicio 3 pedir nombre y mostrarlo</p>
+    <p>si no ingreso nombre, mostrar Ingresar nombre</p>
+    <p v-if="nombre">
+        Hola {{nombre}}
+    </p>
+    <p v-else>Ingrese su nombre</p>
+    <p><input type="text" v-model:value="nombre"></p>
+
+    <p>Hacer un For e iterar tecnologias</p>
+       <p v-for="tecnologia in tecnologias">
+       {{tecnologia}}
+    </p>
+
+    <ul>
+        <li v-for="tecnologia in tecnologias">
+            {{tecnologia}} 
+        </li>
+    </ul>
+
+
+</div>
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="mainClase15.js"></script>
+
+
+</html>

@@ -44,12 +44,18 @@ console.log(`${str1} y ${str2}`);
 let numero1 = 2;
 let numero2 = 3;
 
-let suma = numero1 + numero2;
-let resta = numero1 - numero2;
-let mult = numero1 * numero2;
+let suma = 0
+for(var i=0; i<=5;i++){
+    suma = suma+i;
+}
+
 
 
 console.log("La suma es: " + suma);
+
+fc = ((a) => a + 100)
+
+console.log( fc(10) )
 
 //valores booleanos
 let verdaderooo = true;
