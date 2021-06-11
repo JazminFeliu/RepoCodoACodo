@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2da Clase Vue</title>
+    
+    
+    
+</head>
+<body>
+    <h1>Introduccion al Vue.JS </h1>
+    <!--COMPONENTES REUTILIZABLES, LO MEJOR DE ANGULAR. DOM VIRTUAL, LO MEJOR DE REACT-->
+    <div id="app">
+    <todo-item>{{template}}</todo-item>
+    <todo-item></todo-item>
+    <todo-item></todo-item>
+
+    <p id="demo"></p>
+
+    </div>
+    
+    <script>
+
+document.getElementById("demo").color = "red";
+        Vue.component('todo-item', {
+            template: '<h2>esto es un componente h2</h2>'
+        })
+
+        var app= new Vue({
+            el:"#app",
+
+        });
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="mainClase16.js"></script>
+</html>

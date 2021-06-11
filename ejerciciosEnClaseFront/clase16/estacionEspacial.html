@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Estacion Espacial</title>
+</head>
+<body>
+
+    <h1>Posicion del satélite</h1>
+    <h3>
+        Latitud:    <span id="latitud"></span><br>
+        Longitud:   <span id="longitud"></span><br>
+        Velocidad:  <span id="velocidad"></span><br>
+        Unidades:   <span id="unidad"></span><br>
+    </h3>
+    
+    
+
+
+
+    <script>
+       // https://api.wheretheiss.at/v1/satellites/25544
+       const api_url ='https://api.wheretheiss.at/v1/satellites/25544';
+       
+       async function obtenerPosicion(){
+           const response = await fetch(api_url);
+           console.log(response);
+
+           const data = await response.json();
+           console.log(data);
+
+           const { latitude, longitude, velocity, units } = data;
+
+           console.log(latitude);
+           console.log(longitude);
+           console.log(velocity);
+           console.log(units);
+
+           document.getElementById('latitud').textContent = latitude;
+           document.getElementById('longitud').textContent = longitude;
+           document.getElementById('velocidad').textContent = velocity;
+           document.getElementById('unidad').textContent = units;
+
+
+       }
+       obtenerPosicion();
+
+    </script>
+</body>
+</html>

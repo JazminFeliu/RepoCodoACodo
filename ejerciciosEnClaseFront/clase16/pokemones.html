@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Api</title>
+</head>
+<body>
+    <h1>Pokemones</h1>
+
+    <div id="poke1">
+
+    </div>
+    
+
+    <script>
+        const direccion = ' https://pokeapi.co/api/v2/pokemon/6';
+
+        async function obtenerJson(){
+            const response = await fetch(direccion);
+
+            console.log(response);
+
+            const data = await response.json();
+            console.log(data);
+
+            console.log(data.name);
+
+            var divisor = document.getElementById('poke1').innerHTML = "<h4>"+ data.name + "</h4>";
+            var divisor1 = document.getElementById('poke1');
+
+            var img = document.createElement('img');
+
+            img.setAttribute("src",data.sprites.front_default);
+
+            divisor1.appendChild(img);            
+            
+        }
+        
+        obtenerJson();
+        
+
+
+    </script>
+</body>
+</html>
