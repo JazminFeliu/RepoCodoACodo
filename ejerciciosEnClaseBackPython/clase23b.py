@@ -1,5 +1,5 @@
 def cargar_dato():
-    la=int(input("Ingrese e lvalor del lado del cuadrado "))
+    la=int(input("Ingrese el valor del lado del cuadrado "))
     respuesta = input ("Quiere calcular el perimetro o la superficie? ")
     if respuesta == "superficie":
         mostrar_superficie(la)
@@ -17,3 +17,16 @@ def mostrar_superficie(lado):
     print("La superficie es: {} m2".format(sup))
 
 cargar_dato()
+
+def mayormenor(lista):
+    may=lista[0]
+    men= lista[0]
+    for x in range(1,len(lista)):
+        if lista[x]>may:
+            may=lista[x]
+        else:
+            if lista[x]<men:
+                men=lista[x]
+    print("El numero mayor es: {}".format(may))
+    print("El menor numero es: {}".format(men))
+
