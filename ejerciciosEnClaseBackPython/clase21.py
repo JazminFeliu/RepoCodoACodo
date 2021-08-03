@@ -62,6 +62,7 @@ print(lista_ord3)
 lista_ord4 = lista_ord[-3] #lee de atras para adelante
 print(lista_ord4)
 
+
 #diccionarios se ponen entre llaves y con clave, valor
 productos = {"manzanas":39, "peras":32,"lechuga":17}
 
@@ -70,3 +71,6 @@ precio = int(input("ingresa el precio: "))
 print (productos)
 productos[nombre] = precio
 print (productos)
+
+mi_numero = int(input["Ingrese un digito"]) 
+print(mi_numero)
